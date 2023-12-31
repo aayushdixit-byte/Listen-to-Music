@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="spotify.css">
+</head> 
+<body>
+    <nav class="navigation">
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+            <input type="text" class="search" oninput="getValue()" placeholder="Enter keywords..." ><button class="close">X</button><i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
+        </ul>
+        <div class="search-result">
+            <img id="search-img" src="">
+            <span class="searchSongName"></span>
+            <p class="message"></p>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="songList">
+            <h1>Lets Listen...</h1>
+            <div class="songItems songItemContainer">
+                <img src="covers/1.jpg">
+                <span class="songName">Aankh Lad Jaave</span>
+                <span class="songListPlay"><span class="timeStamp">03:00<i id="0" class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+            </div>
+            <div class="songItems">
+                <img src="covers/1.jpg">
+                <span class="songName">Jhoome Jo Pathaan</span>
+                <span class="songListPlay"><span class="timeStamp">03:28<i id="1" class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+            </div>
+            <div class="songItems">
+                <img src="covers/1.jpg">
+                <span class="songName">Srivalli</span>
+                <span class="songListPlay"><span class="timeStamp">03:41<i id="2" class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+            </div>
+            <div class="songItems">
+                <img src="covers/1.jpg">
+                <span class="songName">Haaye Oye</span>
+                <span class="songListPlay"><span class="timeStamp">03:20<i id="3" class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+            </div>
+            <div class="songItems">
+                <img src="covers/1.jpg">
+                <span class="songName">Tere Pyaar Mei</span>
+                <span class="songListPlay"><span class="timeStamp">04:25<i id="4" class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+            </div>
+            <div class="songItems">
+                <img src="covers/1.jpg">
+                <span class="songName">Afgaan Jalebi</span>
+                <span class="songListPlay"><span class="timeStamp">03:43<i id="5" class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+            </div>
+            <div class="songItems">
+                <img src="covers/1.jpg">
+                <span class="songName">4 Bottle Vodka</span>
+                <span class="songListPlay"><span class="timeStamp">03:45<i id="6" class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+            </div>
+            <div class="songItems">
+                <img src="covers/1.jpg">
+                <span class="songName">Pyaar Hota Kayi Baar Hai</span>
+                <span class="songListPlay"><span class="timeStamp">03:36<i id="7" class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+            </div>
+            <div class="songItems">
+                <img src="covers/1.jpg">
+                <span class="songName">Kamariya</span>
+                <span class="songListPlay"><span class="timeStamp">03:08<i id="8" class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+            </div>
+            <div class="songItems">
+                <img src="covers/1.jpg">
+                <span class="songName">Game of Thrones</span>
+                <span class="songListPlay"><span class="timeStamp">01:27<i id="9" class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" id="myProgressBar" class="range" min="0" value="0" max="100">
+        <div class="icons">
+            <!-- Fontawesome icons -->
+            <i class="fa-solid fa-backward-step" id="previous"></i>
+            <i class="fa-regular fa-circle-play" id="masterPlay"></i>
+            <i class="fa-solid fa-forward-step" id="next"></i>
+        </div>
+        <div class="songInfo">
+        <img id="gif" src="playing.gif" width="42px"><span id="masterSongName">Aankh Lad Jaave</span>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/0e01e9482e.js" crossorigin="anonymous"></script>
+    <script src="spotify.js"></script>
+</body>
+</html>
